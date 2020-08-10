@@ -22,14 +22,14 @@ box-shadow: 6px 7px 45px 0px rgba(117,117,117,1);
 .inputs {
     display: inline-block;
     position: absolute;
-    top: 25%;
+    top: 220px;
     left: 0;
     right: 0;
 }
 
 input {
     font-size: 5rem;
-    max-width: 220px;
+    max-width: 250px;
     text-align: center;
     border: none;
     background-color: rgba(255, 255,255, 0.2);
@@ -52,11 +52,11 @@ button {
     }
 
     .inputs {
-        top: 23%;
+        top: 200px;
     }
     input {
         font-size: 4rem;
-        max-width: 180px;
+        
         padding: 0;
         
     }
@@ -80,6 +80,16 @@ button {
         cx: 250px;
         cy: 150px;
         stroke-width: 10px;
+    }
+    .inputs {
+        top: 175px;
+    }
+    input {
+        font-size: 3.5rem;
+        max-width: 200px;
+    }
+    button {
+        font-size: 2rem;
     }
     
 }

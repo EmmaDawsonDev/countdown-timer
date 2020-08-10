@@ -16,6 +16,10 @@ class Timer {
         if (this.onStart) {
             this.onStart(this.timeRemaining);
         }
+
+        this.startButton.disabled = true;
+        this.pauseButton.disabled = false;
+        this.durationInput.disabled = true; 
         
             this.tick();
             this.interval = setInterval(this.tick, 10);
@@ -23,7 +27,12 @@ class Timer {
     };
 
     pause = () => {
+        this.startButton.disabled = false;
+        this.pauseButton.disabled = true;
+        this.durationInput.disabled = false;
+
         clearInterval(this.interval);
+        this.intervalId = null;
     }
 
     tick = () => {
